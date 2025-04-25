@@ -7,6 +7,59 @@
     font-family: "Winky Rough", sans-serif;
 }
 
+.sliders{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sliders div{
+    height: 500px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
+.sliders:hover div{
+    filter: brightness(0.5);
+    width: 200px;
+}
+
+.sliders div:hover{
+    filter: brightness(1);
+    width: 600px;
+    z-index: 10;
+}
+
+.div1{
+    background-image: url(postre1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.div2{
+    background-image: url(postre2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.div3{
+    background-image: url(postre3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.div4{
+    background-image: url(postre4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 header
 {
     background-color: rgba(209, 143, 143);
@@ -101,11 +154,3 @@ img
 {
     font-size: 20px;
 }
-
-
-
-
-
-
-
-
