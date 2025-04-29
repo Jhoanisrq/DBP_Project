@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Winky Rough', sans-serif;
+}
+
+header {
+    background-color: #d18f8f;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.to-right {
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    background-color: #ffe4c4;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.fondo {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("fondo_prod.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgb(219, 167, 167);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.imagen-producto img {
+    width: 650px;
+    height: auto;
+    border: 1px solid #d0a0c0;
+    border-radius: 10px;
+}
+
+.product_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product_title h1 {
+    font-size: 50px;
+    color: #333;
+}
+
+.product_title hr {
+    width: 70%;
+    margin: 10px auto;
+    border: 1px solid #d18f8f;
+    border-radius: 5px;
+}
+
+.contenido {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.info-producto {
+    max-width: 500px;
+    text-align: left;
+}
+
+.detalles {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    align-items: left;
+}
+
+.detalles p {
+    margin: 10px 0;
+    align-items: left;
+}
+
+.acciones {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.acciones button {
+    background-color: #da2579;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.acciones button:hover {
+    background-color: #f84f96;
+}
+
+select, input[type="number"] {
+    margin-top: 5px;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+}

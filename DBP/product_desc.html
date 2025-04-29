@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Dulcelado postre 1</title>
+	<link rel="stylesheet" href = "style_producto.css">
+    <link rel="website icon" type="png" href="icono.png">
+</head>
+<body>
+    <header>
+        <div class="logo">DULCELADO</div>
+        <div class="to-right">
+            <button>Carrito</button>
+            <button>Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <div class="fondo">
+        <main>
+            <div class="product_title"><h1>POSTRE 02</h1><hr>
+            <div class="contenido">
+                <div class="imagen-producto">
+                    <img src="postre2.jpg" alt="Imagen del postre">
+                </div>
+                <div class="info-producto">
+                    <div class="detalles">
+                        <p><strong>Calificación:</strong> ★★★★☆</p>
+                        <p><strong>Costo:</strong> S/. 50.00</p>
+                        <p><strong>Descripción:</strong><br>
+                            Delicioso pastel artesanal.<br>
+                            - Ingredientes: Harina, cacao, azúcar<br>
+                            - Unidades disponibles: 10
+                        </p>
+                        <p><strong>Opciones:</strong></p>
+                        <label for="sabor">Puede elegir otro sabor:</label>
+                        <select id="sabor">
+                            <option value="chocolate">Chocolate</option>
+                            <option value="vainilla">Vainilla</option>
+                            <option value="fresa">Fresa</option>
+                        </select>
+                        <br><br>
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" min="1" max="10" value="1">
+                    </div>
+                    <div class="acciones">
+                    <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            </div> 
+        </main>
+    </div>
+
+<script>
+    function agregarAlCarrito() {
+        const sabor = document.getElementById('sabor').value;
+        const cantidad = document.getElementById('cantidad').value;
+    }
+</script>
+
+</body>
+</html>
